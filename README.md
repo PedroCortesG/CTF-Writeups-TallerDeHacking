@@ -1,0 +1,1 @@
+Este repositorio contiene writeups de los CTF hechos en el ramo 'Taller de Hacking' de la Universidad de Chile en el periodo 2025-01.
