@@ -1,0 +1,5 @@
+#### No la veo
+Lo primero que intente es montar la imagen, aunque fuera .E01. Como esto no funciono, empece a investigar sobre ese tipo de extencion y encontre como montarla con ewfmount. Estuve bastante rato intentando montar lo que tiraba esto pero no llegue a nada, entonces desbloquee el hint. Con esto, descargue autopsy y abri un nuevo caso con el .E01. Una vez hecho, vi que tenia una opcion para buscar y mas especificamente con expresion regular, por lo hice la busqueda con `CC5325\{[^}]*\}` y la encontre.
+
+#### supercrypt
+Lo primero que hice es exportar la carpeta cc5325 de autopsy para trabajarla mas facilmente con git. Probe con git log y vi lo que se cambio en el ultimo commit (no en el de inicializacion). Con esto, busque en autopsy ./supercrypt para ver si estaba el log de la ejecucion y con esto encontrar la clave secreta. Con esta, hice un script en bash para encontrar la flag decriptando todos los flag.enc que estaban en alguna subcarpeta de supercrypt usando el inverso del openssl que se usó en la encriptación y viendo cuando me daba valor valido. Con esto, llegue a la flag en la carpeta 44/58

@@ -1,0 +1,7 @@
+#### Cam - Feed
+Lo primero que hice fue buscar sobre los archivos .squashfs, donde encontre que con unsquashfs podia conseguir la imagen. Con esta, empece a buscar por las carpetas hasta que encontre el codigo fuente de la pagina en /app. Aqui fui hasta templates/app.py donde encontre que para entrar a la url /dashboard/live/feed solo necesitaba una cookie en true, por lo que me agregue esta desde devtools y encontre la flag CC5325{B3w4R3_0f_b4D_F1rmW4r3} en el link.
+
+#### Cam - RCE
+Vi que con la cookie del anterior problema podia tambien entrar a settings, por lo que hice eso e intente hacer inyecciones con las options de new_res. Como no me funciono, intente otras cosas hasta que probe lo mismo de hacer post con inyecciones en new_res pero ahora con curl en mi terminal, lo que si funciono (genuinamente no se por que no funciono desde la pagina) por lo que busque en /root con ls dejando el resultado en un txt en static, el cual pude acceder desde el url /static/flag.txt. Aqui me mostro que estaba root.txt en /root, por lo que le hice cat de la misma forma que hice el ls y consegui la flag CC5325{PWNING_CAMS}
+
+PD: Como sugerencia (no se si se dijo en algun lugar) estaria bueno que mencionaran hasta que punto es valido conseguir las flags desde archivos temporales que hicieron otros estudiantes que si hicieron correctamente el ctf, ya que tanto en este como en el ctf 14 se podia encontrar muy facil la flag de esta forma, pero yo entenderia que no es la idea real de los ejercicios.

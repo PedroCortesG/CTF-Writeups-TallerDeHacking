@@ -1,0 +1,7 @@
+#### Integración y desarrollo
+Lo primero que intente, es buscar cosas sobre el script de DataTables que habia, ya que era super largo y se veia sospechoso. No encontre nada, por lo que busque "cc5325-2024" en google, ya que por el hint que dieron en discord fue lo unico que se me ocurrio. Buscando la frase exacta, llegue a un link de reportes, donde encontre uno del password generator del ctf anterior. Con esto, entre en el github de cc5325-2024, donde estaba el codigo para llegar a repositorios escondidos. Estuve un rato viendo el de password generator hasta darme cuenta que era el del ctf anterior xd. Depues, busuque si con la creedencial se podia ver que repos habia, encontrando que si se podia y asi encontrando el repo "Mis-secretos.git". Aqui, vi el texto del archivo txt, que no me dijo nada. Pense en ver si era algun tipo de esolang, pero primero probe viendo si habian versiones antiguas del repo. Con esto encontre el cambio que se hice al txt, encontrando la flag CC5325{mY-h1dD3n_5EcR3t5 4re/5af3}
+PD: Si, me comí el Rick Roll.
+
+#### Había otra??
+Como todavia tenia la terminal de la pregunta anterior, subi en mi log para ver el archivo txt del repo (le habia hecho cat), pero justo vi que cuando revise los commits, cada commit tenia el mail de quien lo hizo, por lo que encontre la flag cc5325.2024@gmail.com.
+PD2: Como salia que era bonus supongo que no era necesaria, pero estaba tan facil que escribo el writeup por si acaso.

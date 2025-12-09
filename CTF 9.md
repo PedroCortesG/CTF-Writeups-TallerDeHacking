@@ -1,0 +1,5 @@
+#### No flag
+Lo primero que hice fue inspeccionar elemento del link del ctf, con esto vi el comentario con un texto. Como terminaba en == , lo primero que se me ocurrio es pasarlo desde BASE64, con esto me dio el texto con la ruta para entrar como admin. Aqui, inspeccione de nuevo elemento y no habia nada, por lo que intente con admin admin como usuario, esto no funciono por lo que intente hacer inyeccion sql con "' OR '1'='1 " en usuario y contraseña. Con esto, llegue a la flag CC5325{n0_f1ag_f0r_y0u}
+
+#### Pasar o no pasar
+Lo primero que hice fue inspeccionar el html y las request. Esto no me dijo nada, por lo que luego de un rato intente cambiarle el value al select de mi grupo, dandome un exception con el comando que se usa en el submit, lo que me dijo que tenia que hacer alguna inyeccion cross site. Primero hice un '; ls /app/groups; echo ' en el value, donde estaban los grupos, aqui no habia nada entonces probe en /app y aqui encontre flag.txt la cual abri con '; cat /app/flag.txt; echo ', dandome la flag CC5325{D4ng3r0Us_fUNct10n5}.

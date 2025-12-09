@@ -1,0 +1,6 @@
+#### Mis galletas
+Despues de comerme el video, lo primero que hice fue ver el html de la pagina, en este encontre la parte de script que literalmente borraba el acceso a la url. Busque por internet y encontre una forma de desactivar Javascript con las devtools de chrome, con esto ya no se elimino el link cuando recargue la pagina y entre a admin. Aqui, busuqe denuevo en el html pero no encontre nada, por lo que vi la parte de network y despues las cookies, donde finalmente encontre la cookie de admin que tenia como valor falso. Puse verdadero y encontre la flag CTF{notecomasmisgalletas}.
+
+#### La escondida
+Lo primero que hice como siempre fue entrar al html, aqui salian todos los botones por separado entonces se me ocurrio abrir la source page para ver si habia algun boton con algo distinto. A simple vista no vi ninguno distinto y buscando con ctrl f, el <button> de todos era el mismo cambiando value, pero justo vi que al final de todo habia un boton que no salia en la pagina. Puse su value en un boton que si aparecia y mi mando a la pagina con la flag CC5325{Frontend_Security!}.
+PD: Despues vi que bastaba con ponerle el display en 1 en vez de none, pero igual llegue al mismo resultado.
